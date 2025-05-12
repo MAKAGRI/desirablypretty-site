@@ -4,116 +4,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Desirably So Prettyy LLC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: #fff7fc;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background: #fff0f6;
+      color: #2c2c2c;
     }
-
     header {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://cdn.pixabay.com/photo/2022/06/01/13/30/makeup-7237242_1280.jpg') center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 140px 20px 80px;
-    }
-
-    header h1 {
-      font-size: 48px;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 15px;
-    }
-
-    header p {
-      font-size: 20px;
-      font-weight: 300;
-    }
-
-    nav {
-      background: #b7286a;
-      text-align: center;
-      padding: 14px 0;
-    }
-
-    nav a {
+      background: #ff69b4;
+      padding: 20px 40px;
       color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
+      text-align: center;
     }
-
-    .section {
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #ffddee;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #ff1493;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    section {
+      padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
-      padding: 60px 20px;
+    }
+    .section-title {
       text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #ff1493;
     }
-
-    .section h2 {
-      color: #b7286a;
-      font-size: 32px;
-      margin-bottom: 20px;
-      font-family: 'Playfair Display', serif;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-
     .card {
-      background: #fff;
+      background: white;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
+    .card h3 {
+      color: #ff69b4;
+    }
     footer {
-      background: #b7286a;
-      color: #fff;
+      background: #ff69b4;
+      color: white;
       text-align: center;
-      padding: 30px;
-      margin-top: 60px;
-    }
-
-    a {
-      color: #b7286a;
+      padding: 30px 10px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Desirably So Prettyy LLC</h1>
-    <p>Beauty, Confidence & Empowerment — Based in Columbus, OH</p>
+    <p>Confidence & Beauty, Elevated — Based in Columbus, Ohio</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#services">Services</a>
+    <a href="#mission">Mission</a>
+    <a href="#products">Products</a>
+    <a href="#stylists">Stylists</a>
+    <a href="#events">Events</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="section" id="about">
-    <h2>About Us</h2>
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
     <div class="card">
-      <p>Desirably So Prettyy LLC is your destination for modern beauty and style. Founded by Omolara Banton and based in Columbus, Ohio, our mission is to help you feel confident, beautiful, and empowered — inside and out.</p>
+      <p>Desirably So Prettyy LLC is a beauty empowerment brand founded in Columbus, Ohio. We specialize in curating fashion, self-care, and glam products that inspire confidence and elegance in every individual.</p>
     </div>
   </section>
 
-  <section class="section" id="services">
-    <h2>Our Services</h2>
+  <section id="mission">
+    <h2 class="section-title">Our Mission</h2>
     <div class="card">
-      <p>💄 Makeup artistry for all occasions</p>
-      <p>✨ Image consulting and styling</p>
-      <p>📸 Personal branding and beauty workshops</p>
+      <p>We aim to make beauty accessible, fun, and uplifting. Every product and service we provide is centered on joy, identity, and empowerment.</p>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <h2>Contact</h2>
+  <section id="products">
+    <h2 class="section-title">Our Products</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>💄 Lip & Glow Kits</h3>
+        <p>High pigment and hydrating lip kits to perfect your pout.</p>
+      </div>
+      <div class="card">
+        <h3>🌸 Skincare</h3>
+        <p>Gentle formulas crafted to nourish, brighten, and restore.</p>
+      </div>
+      <div class="card">
+        <h3>👜 Accessories</h3>
+        <p>Curated glam accessories to complete every look.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stylists">
+    <h2 class="section-title">Meet Our Stylists</h2>
+    <div class="card">
+      <p>Our expert beauty stylists and consultants are here to provide personalized advice and looks tailored to your style and mood.</p>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="card">
+      <p>Pop-up beauty bars, makeup masterclasses, and seasonal showcases—stay tuned and glam with us!</p>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2 class="section-title">Customer Love</h2>
+    <div class="card">
+      <p>"The glow serum changed my skin completely! I love Desirably So Prettyy!" – Amanda L.</p>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2 class="section-title">Beauty Blog</h2>
+    <div class="card">
+      <p>Read the latest on beauty trends, confidence tips, and behind-the-scenes looks from our team and events.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
     <div class="card">
       <p><strong>Email:</strong> <a href="mailto:contact@desirablyprettyy.shop">contact@desirablyprettyy.shop</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+12395224574">(239) 522-4574</a></p>
-      <p><strong>Location:</strong> 3972 Rivercreek Bay Way, Columbus, OH</p>
+      <p><strong>Phone:</strong> <a href="tel:+12395224574">+1 (239) 522-4574</a></p>
+      <p><strong>Location:</strong> Columbus, Ohio</p>
     </div>
   </section>
 
